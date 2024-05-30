@@ -94,7 +94,7 @@
 
 /* ADICIONAR PRODUTO */
 
-.sectionAdicionarProduto {
+.container__formulario {
     display: flex;
     flex-direction: column;
     gap: 30px;

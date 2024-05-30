@@ -17,25 +17,29 @@
     <!-- MAIN -->
 
     <main class="main">
+
+    <!-- MEUS PRODUTOS  -->
+
         <section>
             <h1 class="titulo">MEUS PRODUTOS:</h1>
             <ul class="meusProdutos" data-lista>
             </ul>
         </section>
             
-        <section class="sectionAdicionarProduto">
+    <!-- ADICIONAR PRODUTO -->
+
+        <form class="container__formulario" data-formulario>
             <h1 class="titulo">ADICIONAR PRODUTO:</h1>
             <div class="adicionarProduto">
-                <input class="adicionarProdutoInput" placeholder="nome...">
-                <input class="adicionarProdutoInput" placeholder="valor...">
-                <input class="adicionarProdutoInput" placeholder="imagem...">
+                <input class="adicionarProdutoInput" placeholder="nome..." id="nome" data-nome>
+                <input class="adicionarProdutoInput" placeholder="valor..." id="valor" data-valor>
+                <input class="adicionarProdutoInput" placeholder="imagem..." id="imagem" data-imagem>
                 <div class="adicionarProdutoBotao">
-                    <button class="adicionarProdutoBotaoGuardar">Guardar</button>
+                    <input class="adicionarProdutoBotaoGuardar" type="submit"></button>
                     <button class="adicionarProdutoBotaoLimpar">Limpar</button>
                 </div>
-
             </div>
-        </section>
+        </form>
     </main>
 
     <!-- RODAPÉ -->
@@ -47,5 +51,6 @@
 
     </footer>
     <script src="./js/mostrarCards.js" type="module"></script>
+    <script src="./js/criarCard.js" type="module"></script>
 </body>
 </html>

@@ -10,7 +10,7 @@ function constroiCard(nome, preco, imagem) {
     <p class="card__texto">${nome}</p>
 </div>
 <div class="card__precoExcluir">
-    <p class="card__preco">R$${preco}</p>
+    <p class="card__preco">R$ ${preco}</p>
     <img class="card__excluir" src="./img/lixeira.png" alt="logo de lixeira">
 </div>`
 
