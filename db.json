@@ -1,0 +1,59 @@
+{
+    "produto": [
+        {
+            "nome": "Figure Roronoa Zoro One Piece",
+            "preco": "59,90",
+            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lpi6y20vchud96",
+            "id": 1
+        },
+        {
+            "nome": "Figure Barba Branca One Piece",
+            "preco": "82,99",
+            "imagem": "https://down-br.img.susercontent.com/file/sg-11134201-7rbmf-lqh3faszoubo72",
+            "id": 2
+        },
+        {
+            "nome": "Figure Zenitsu Demon Slayer",
+            "preco": "59,99",
+            "imagem": "https://down-br.img.susercontent.com/file/0d54b61a367ec758b76b47d06438a674",
+            "id": 3
+        },
+        {
+            "nome": "Quadro Decorativo Mosaico Demon Slayer",
+            "preco": "49,80",
+            "imagem": "https://images-na.ssl-images-amazon.com/images/I/610+vKXi+zL._AC_UL600_SR600,600_.jpg",
+            "id": 4
+        },
+        {
+            "nome": "Quadro Decorativo Jujutsu Kaisen",
+            "preco": "54,90",
+            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lv550xctz6ax1b",
+            "id": 5
+        },
+        {
+            "nome": "Quadro decorativo Vagabond Musashi",
+            "preco": "69,90",
+            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-23030-woogs5pavkov6a",
+            "id": 6
+        },
+        {
+            "nome": "Moletom Killua HunterxHunter",
+            "preco": "72,31",
+            "imagem": "https://down-br.img.susercontent.com/file/690d511f7911582f534e396418dc2bb2",
+            "id": 7
+        },
+        {
+            "nome": "Moletom Luffy Gear 5 One Piece",
+            "preco": "72,31",
+            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98r-lm90mdamrbjf7f",
+            "id": 8
+        },
+        {
+            "nome": "Suéter de Casal Tokyo Revengers",
+            "preco": "99,00",
+            "imagem": "https://down-br.img.susercontent.com/file/4c49176b44e57823e33a7e99a9efa766",
+            "id": 9
+        }
+        
+    ]
+}

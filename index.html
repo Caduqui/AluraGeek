@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geek</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <header class="cabecalho" >
+        <img src="img/Logo.png" alt="logo AluraGeek">
+    </header>
+
+    <!-- MAIN -->
+
+    <main class="main">
+        <section>
+            <h1 class="titulo">MEUS PRODUTOS:</h1>
+            <ul class="meusProdutos" data-lista>
+            </ul>
+        </section>
+            
+        <section class="sectionAdicionarProduto">
+            <h1 class="titulo">ADICIONAR PRODUTO:</h1>
+            <div class="adicionarProduto">
+                <input class="adicionarProdutoInput" placeholder="nome...">
+                <input class="adicionarProdutoInput" placeholder="valor...">
+                <input class="adicionarProdutoInput" placeholder="imagem...">
+                <div class="adicionarProdutoBotao">
+                    <button class="adicionarProdutoBotaoGuardar">Guardar</button>
+                    <button class="adicionarProdutoBotaoLimpar">Limpar</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+
+    <footer class="rodape">
+        <img src="./img/Logo.png" alt="logo da AluraGeek">
+        <h2 class="rodapeAutor">DESENVOLVIDO POR GUILHERME CONTE</h2>
+        <h3 class="rodapeAno">ALURA LATAM - 2024</h3>
+
+    </footer>
+    <script src="./js/mostrarCards.js" type="module"></script>
+</body>
+</html>
