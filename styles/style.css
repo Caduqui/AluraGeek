@@ -85,6 +85,13 @@
     justify-content: space-between;
 }
 
+.card__botaoExcluir {
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+}
+
 .card__preco {
     color: #FFFFFF;
     font-family: "IBM Plex Mono", monospace;
