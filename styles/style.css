@@ -199,6 +199,7 @@
 @media (max-width: 942px) {
     .main {
         flex-direction: column-reverse;
+        padding: 4% 0 4% 2%;
     }
 
     .titulo {
@@ -206,13 +207,19 @@
     }
 
     .meusProdutos {
-        flex-direction: row;
-        flex-wrap: nowrap;
-        overflow-x: scroll;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-auto-flow: column;
+        overflow-x: auto;
         overflow-y: hidden;
-        height: 22vh;
-        width: 100vw;
+        height: 62vh;
+        width: 97vw;
         border-left: none;
         border-bottom: none;
+        padding: 4% 0 0 0;
+    }
+
+    .cards {
+        max-height: auto;
     }
 }
