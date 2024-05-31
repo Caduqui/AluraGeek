@@ -7,7 +7,7 @@ function constroiCard(produto) {
     cartao.className = 'cards';
     cartao.dataset.id = produto.id;
     cartao.innerHTML = `<div class="cardConteudo">
-    <img class= card__imagem src="${produto.imagem}" alt="boneco do megumi">
+    <img class= card__imagem src="${produto.imagem}" alt="imagem de produto">
     <p class="card__texto">${produto.nome}</p>
 </div>
 <div class="card__precoExcluir">
@@ -30,12 +30,14 @@ async function listaCard() {
         botao.addEventListener('click', (evento) => {
             const cartao = evento.target.closest('.cards');
             const produtoId = cartao.dataset.id;
-            excluirProduto(produtoId, cartao);
+            excluirProduto(produtoId, cartao, evento);
         });
     });
 }
 
-async function excluirProduto(id, cartao) {
+async function excluirProduto(id, cartao, evento) {
+    console.log('aconteceu');
+    evento.preventDefault();
     try {
         await conectaApi.deletaCard(id);
         lista.removeChild(cartao);

@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+:root {
+    --cor-roxa: #5300C8;
+    --cor-roxa-cards: #5D04D9;
+    --cor-branca: #FFFFFF;
+    --cor-cinza-border: #D6D6D6;
+    --cor-azul-formulario: #03318C;
+
+}
+
 * {
     margin: 0;
     border: 0;
@@ -12,72 +21,71 @@
     justify-content: center;
     align-items: center;
     padding: 1% 0;
-    background-color: #5300C8
+    background-color: var(--cor-roxa);
+    border-bottom: 6px solid var(--cor-cinza-border);
 }
 
 .main {
     display: flex;
-    padding: 4% 4%;
-    gap: 200px;
-}
-
-.section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    padding: 4% 2%;
+    justify-content: space-around;
 }
 
 .titulo {
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
-    padding: 0 0 1.5% 0;
+    padding: 0 0 3% 0;
 }
 
 .meusProdutos {
     display: flex;
-    gap: 10px;
-}
-
-.meusProdutos:nth-child(0),
-.meusProdutos:nth-child(1),
-.meusProdutos:nth-child(2) {
     flex-wrap: wrap;
+    gap: 10px;
+    overflow-y: scroll;
+    width: 45vw;
+    height: 64vh;
+    border-left: 8px solid var(--cor-cinza-border);
+    border-bottom: 8px solid var(--cor-cinza-border);
+    padding: 1% 1% 2% 2%;
 }
 
 .cards {
-    border: 1px solid #5D04D9;
-    background-color: #5D04D9;
-    height: 258px;
+    border: 3px solid black;
+    background-color: var(--cor-roxa-cards);
+    max-height: 258px;
     width: 196px;
     display: flex;
     flex-direction: column;
-    padding: 3% 2% 0 2%;
+    padding: 0.7% 0.6% 0 0.6%;
     gap: 10px;
     border-radius: 10px;
+    justify-content: space-between;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
 .cardConteudo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
+    overflow: hidden;
 }
 
 .card__imagem {
     width: 176px;
     height: 174px;
+    border: 3px solid black;
 }
 
 .card__texto {
-    color: #FFFFFF;
+    color: var(--cor-branca);
     text-align: center;
     font-family: "IBM Plex Mono", monospace;
     font-weight: 400;
     font-style: normal;
-    font-size: 15px;
+    font-size: 0.94rem;
 }
 
 .card__precoExcluir {
@@ -93,7 +101,7 @@
 }
 
 .card__preco {
-    color: #FFFFFF;
+    color: var(--cor-branca);
     font-family: "IBM Plex Mono", monospace;
     font-weight: 700;
     font-style: normal;
@@ -115,7 +123,7 @@
 }
 
 .adicionarProdutoInput {
-    border: 3px solid #03318C;
+    border: 3px solid var(--cor-azul-formulario);
     width: 392px;
     height: 58px;
     border-radius: 30px;
@@ -123,7 +131,7 @@
 }
 
 .adicionarProdutoInput::placeholder {
-    color: #03318C;
+    color: var(--cor-azul-formulario);
     font-family: "IBM Plex Mono", monospace;
     font-weight: 600;
     font-style: normal;
@@ -135,52 +143,76 @@
 }
 
 .adicionarProdutoBotaoGuardar {
-    border: solid #03318C;
-    background-color: #03318C;
-    color: #FFFFFF;
+    border: solid var(--cor-azul-formulario);
+    background-color: var(--cor-azul-formulario);
+    color: var(--cor-branca);
     width: 188px;
     height: 55px;
     border-radius: 15px;
     font-family: "IBM Plex Mono", monospace;
     font-weight: 500;
     font-style: normal;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .adicionarProdutoBotaoLimpar {
-    border: solid 3px #03318C;
-    background-color: #FFFFFF;
-    color: #03318C;
+    border: solid 3px var(--cor-azul-formulario);
+    background-color: var(--cor-branca);
+    color: var(--cor-azul-formulario);
     width: 188px;
     height: 55px;
     border-radius: 15px;
     font-family: "IBM Plex Mono", monospace;
     font-weight: 500;
     font-style: normal;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 /* RODAPÉ */
 
 .rodape {
     padding: 1% 0;
-    background-color: #5300C8;
+    background-color: var(--cor-roxa);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 8px;
+    border-top: 7px solid var(--cor-cinza-border);
 }
 
 .rodapeAutor {
-    color: #FFFFFF;
+    color: var(--cor-branca);
     font-family: "IBM Plex Mono", monospace;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .rodapeAno {
-    color: #FFFFFF;
+    color: var(--cor-branca);
     font-family: "IBM Plex Mono", monospace;
     font-weight: 200;
-    font-size: 16px;
+    font-size: 1rem;
+}
+
+/* CELULAR */
+
+@media (max-width: 942px) {
+    .main {
+        flex-direction: column-reverse;
+    }
+
+    .titulo {
+        padding: 5%;
+    }
+
+    .meusProdutos {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        height: 22vh;
+        width: 100vw;
+        border-left: none;
+        border-bottom: none;
+    }
 }

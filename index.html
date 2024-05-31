@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geek</title>
+    <title>AluraGeek</title>
+    <link rel="shortcut icon" type="imagex/png" href="./img/iconeNavegador.png">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
@@ -31,11 +32,11 @@
         <form class="container__formulario" data-formulario>
             <h1 class="titulo">ADICIONAR PRODUTO:</h1>
             <div class="adicionarProduto">
-                <input class="adicionarProdutoInput" placeholder="nome..." id="nome" data-nome>
-                <input class="adicionarProdutoInput" placeholder="valor..." id="valor" data-preco>
-                <input class="adicionarProdutoInput" placeholder="imagem..." id="imagem" data-imagem>
+                <input required class="adicionarProdutoInput" placeholder="nome..." id="nome" data-nome>
+                <input required class="adicionarProdutoInput" placeholder="valor..." id="valor" data-preco>
+                <input required class="adicionarProdutoInput" type="url" placeholder="imagem..." id="imagem" data-imagem>
                 <div class="adicionarProdutoBotao">
-                    <input class="adicionarProdutoBotaoGuardar" type="submit"></button>
+                    <button class="adicionarProdutoBotaoGuardar">Guardar</button>
                     <button class="adicionarProdutoBotaoLimpar" id="botaoLimpar" type="reset" value="reset the form">Limpar</button>
                 </div>
             </div>
