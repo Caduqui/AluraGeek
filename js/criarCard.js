@@ -8,7 +8,9 @@ async function criarCard(evento) {
     const preco = document.querySelector('[data-preco]').value;
     const imagem = document.querySelector('[data-imagem]').value;
 
-    await conectaApi.criaCard(nome, preco, imagem);
+    const novoCard = await conectaApi.criaCard(nome, preco, imagem);
+    const cartao = constroiCard(novoCard);
+    lista.appendChild(cartao);
 }
 
 formulario.addEventListener('submit', evento => criarCard(evento));
