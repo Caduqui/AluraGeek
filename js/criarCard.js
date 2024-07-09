@@ -2,8 +2,7 @@ import { conectaApi } from "./conectaApi.js";
 
 const formulario = document.querySelector('[data-formulario]');
 
-async function criarCard(evento) {
-    evento.preventDefault();
+async function criarCard() {
     const nome = document.querySelector('[data-nome]').value;
     const preco = document.querySelector('[data-preco]').value;
     const imagem = document.querySelector('[data-imagem]').value;
